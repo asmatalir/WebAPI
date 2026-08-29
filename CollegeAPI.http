@@ -1,0 +1,26 @@
+@CollegeAPI_HostAddress = http://localhost:5254
+
+GET {{CollegeAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{CollegeAPI_HostAddress}}/api/student
+Accept: application/json
+
+###
+
+GET {{CollegeAPI_HostAddress}}/api/student/1
+Accept: application/json
+
+###
+
+POST {{CollegeAPI_HostAddress}}/api/student
+Content-Type: application/json
+
+{
+  "name": "Dave Wilson",
+  "dept": "Civil Engineering"
+}
+
+###
